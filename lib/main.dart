@@ -8,6 +8,7 @@ import 'van-slider.dart';
 import 'van-radio.dart';
 import 'van-switch.dart';
 import 'van-datepicker.dart';
+import 'van-steps.dart';
 
 void main() {
   runApp(MyApp());
@@ -55,6 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            VanSteps()
           ],
         ),
       ),
