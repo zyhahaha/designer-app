@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
-// import 'package:/designer-app/lib/src/van-button.dart'
 import 'van-button.dart';
 import 'van-icon.dart';
 import 'van-text.dart';
-// final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+import 'van-input.dart';
+import 'van-checkbox.dart';
+import 'van-slider.dart';
+import 'van-radio.dart';
+import 'van-switch.dart';
+import 'van-datepicker.dart';
 
 void main() {
   runApp(MyApp());
@@ -51,14 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            VanText(title: 'test'),
-            // Text(
-            //   'hello test:',
-            // ),
-            // Text(
-            //   '$_counter',
-            //   style: Theme.of(context).textTheme.headline4,
-            // ),
+            VanDatePicker(restorationId: 'main')
           ],
         ),
       ),
