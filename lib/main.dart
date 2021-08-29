@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+// import 'package:/designer-app/lib/src/van-button.dart'
+import 'van-button.dart';
+import 'van-icon.dart';
+import 'van-text.dart';
+// final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
 void main() {
   runApp(MyApp());
@@ -47,21 +51,23 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'hello test:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
+            VanText(title: 'test'),
+            // Text(
+            //   'hello test:',
+            // ),
+            // Text(
+            //   '$_counter',
+            //   style: Theme.of(context).textTheme.headline4,
+            // ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: Icon(Icons.add),
+        child: Icon(Icons.zoom_out_rounded),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
+
