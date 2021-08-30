@@ -6,11 +6,11 @@ class VanText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Center(
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
+          // Image.network('http://store.lyky.xyz/img/bg_img.f6b7946a.png'),
           Text(
             '$title',
             textAlign: TextAlign.center,

@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[VanButton()],
+          children: <Widget>[VanText(title: '1234')],
         ),
       ),
       // floatingActionButton: FloatingActionButton(
