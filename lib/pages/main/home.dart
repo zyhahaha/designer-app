@@ -17,7 +17,16 @@ class _HomePageState extends State<HomePage> {
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[Text('Home page')],
+        children: <Widget>[
+          Text('Home page'),
+          ElevatedButton(
+            // style: style,
+            onPressed: () {
+              Navigator.pushNamed(context, '/order');
+            },
+            child: const Text('next page'),
+          )
+        ],
       ),
     );
   }

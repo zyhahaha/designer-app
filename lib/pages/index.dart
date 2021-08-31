@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 // basic
 import 'nav_bar.dart';
 // page
-import 'home/home.dart';
-import 'home/my.dart';
+import 'main/home.dart';
+import 'main/my.dart';
 
 class HomePageContainer extends StatefulWidget {
   HomePageContainer({Key? key, required this.title}) : super(key: key);
@@ -42,21 +42,3 @@ class _HomePageContainer extends State<HomePageContainer> {
     );
   }
 }
-
-// class _HomePageState extends State<HomePage> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: Text(widget.pageIndex),
-//       ),
-//       body: Center(
-//         child: Column(
-//           mainAxisAlignment: MainAxisAlignment.center,
-//           children: <Widget>[Text('Home page')],
-//         ),
-//       ),
-//       bottomNavigationBar: VanNavigationBar(),
-//     );
-//   }
-// }
