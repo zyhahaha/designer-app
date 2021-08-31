@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 // router
 import 'router/index.dart';
 // home page
-import 'src/home_page/index.dart';
+import 'src/home/index.dart';
 // widget
 import 'src/van_widget/van_text.dart';
 import 'src/van_widget/van_button.dart';
