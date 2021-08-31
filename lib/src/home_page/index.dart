@@ -1,33 +1,45 @@
 import 'package:flutter/material.dart';
 // basic
-import 'nav_bar.dart';
+// import 'nav_bar.dart';
 // page
-import 'home_page.dart';
-import 'my_page.dart';
+import 'page_home.dart';
+import 'page_my.dart';
 
-class HomePage extends StatefulWidget {
-  HomePage({Key? key, required this.title}) : super(key: key);
-
-  final String title;
+class HomePageContainer extends StatefulWidget {
+  HomePageContainer({Key? key, required this.pageIndex}) : super(key: key);
+  final int pageIndex;
 
   @override
-  _HomePageState createState() => _HomePageState();
+  _HomePageContainer createState() => _HomePageContainer();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageContainer extends State<HomePageContainer> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[Text('Home page')],
-        ),
-      ),
-      bottomNavigationBar: VanNavigationBar(),
-    );
+    if (widget.pageIndex == 0) {
+      return HomePage(title: 'aaaa');
+    } else if (widget.pageIndex == 2) {
+      return MyPage(title: 'bbbb');
+    } else {
+      return Text('error page');
+    }
   }
 }
+
+// class _HomePageState extends State<HomePage> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text(widget.pageIndex),
+//       ),
+//       body: Center(
+//         child: Column(
+//           mainAxisAlignment: MainAxisAlignment.center,
+//           children: <Widget>[Text('Home page')],
+//         ),
+//       ),
+//       bottomNavigationBar: VanNavigationBar(),
+//     );
+//   }
+// }

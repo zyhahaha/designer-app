@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-// basic
-// import 'src/home_page/nav_bar.dart';
 // router
 import 'router/index.dart';
 // home page
-import 'src/home_page/home_page.dart';
-import 'src/home_page/my_page.dart';
+import 'src/home_page/index.dart';
 // widget
 import 'src/van_widget/van_text.dart';
 import 'src/van_widget/van_button.dart';
@@ -30,7 +27,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: HomePage(title: 'Flutter Demo A'),
+      home: HomePageContainer(pageIndex: 0),
       debugShowCheckedModeBanner: false, // 隐藏Debug标记
 
       // initialRoute: "/",
