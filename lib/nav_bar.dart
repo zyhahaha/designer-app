@@ -25,6 +25,7 @@ class _VanNavigationBar extends State<VanNavigationBar> {
   // ];
 
   void _onItemTapped(int index) {
+    // Navigator.pushNamed(context, index == 0 ? '/' : '/my');
     setState(() {
       _selectedIndex = index;
     });
@@ -40,7 +41,7 @@ class _VanNavigationBar extends State<VanNavigationBar> {
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.business),
-          label: '列表',
+          label: '内容',
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.school),

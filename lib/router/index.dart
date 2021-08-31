@@ -1,34 +1,29 @@
 import 'package:flutter/material.dart';
-import '../nav_bar.dart';
 
 var routersMap = {
-  "/": (context) => HomePage(),
-  '/second': (context) => MyPage(),
+  // "/": (context) => HomeSubPage(),
+  '/my': (context) => MySubPage(),
 };
 
-class HomePage extends StatelessWidget {
+class HomeSubPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Home Screen"),
-      ),
-      body: Center(child: Text("Home Screen")),
-      bottomNavigationBar: VanNavigationBar(),
-    );
+        appBar: AppBar(
+          title: Text("Home Screen"),
+        ),
+        body: Center(child: Text("Home Screen")));
   }
 }
 
-class MyPage extends StatelessWidget {
+class MySubPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("My Screen"),
-      ),
-      body: Center(child: Text("My Screen")),
-      bottomNavigationBar: VanNavigationBar(),
-    );
+        appBar: AppBar(
+          title: Text("My Screen"),
+        ),
+        body: Center(child: Text("My Screen")));
   }
 }
 
