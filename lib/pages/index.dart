@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 // basic
 import 'nav_bar.dart';
 // page
-import 'page_home.dart';
-import 'page_my.dart';
+import 'home/home.dart';
+import 'home/my.dart';
 
 class HomePageContainer extends StatefulWidget {
   HomePageContainer({Key? key, required this.title}) : super(key: key);

@@ -2,18 +2,18 @@ import 'package:flutter/material.dart';
 // router
 import 'router/index.dart';
 // home page
-import 'src/home/index.dart';
+import 'pages/index.dart';
 // widget
-import 'src/van_widget/van_text.dart';
-import 'src/van_widget/van_button.dart';
-import 'src/van_widget/van_icon.dart';
-import 'src/van_widget/van_input.dart';
-import 'src/van_widget/van_checkbox.dart';
-import 'src/van_widget/van_slider.dart';
-import 'src/van_widget/van_radio.dart';
-import 'src/van_widget/van_switch.dart';
-import 'src/van_widget/van_datepicker.dart';
-import 'src/van_widget/van_steps.dart';
+import 'van_widget/van_text.dart';
+import 'van_widget/van_button.dart';
+import 'van_widget/van_icon.dart';
+import 'van_widget/van_input.dart';
+import 'van_widget/van_checkbox.dart';
+import 'van_widget/van_slider.dart';
+import 'van_widget/van_radio.dart';
+import 'van_widget/van_switch.dart';
+import 'van_widget/van_datepicker.dart';
+import 'van_widget/van_steps.dart';
 
 void main() {
   runApp(MyApp());
