@@ -2,7 +2,7 @@
 // page
 import '../pages/order/index.dart';
 
-var routersMap = {
+final routes = {
   // "/": (context) => HomeSubPage(),
   '/order': (context) => OrderPageContainer(title: 'order title'),
 };
