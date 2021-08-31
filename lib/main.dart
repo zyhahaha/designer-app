@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 // basic
 import 'nav_bar.dart';
 // widget
-import 'van_button.dart';
-import 'van_icon.dart';
-import 'van_text.dart';
-import 'van_input.dart';
-import 'van_checkbox.dart';
-import 'van_slider.dart';
-import 'van_radio.dart';
-import 'van_switch.dart';
-import 'van_datepicker.dart';
-import 'van_steps.dart';
+import 'src/van_text.dart';
+import 'src/van_button.dart';
+import 'src/van_icon.dart';
+import 'src/van_input.dart';
+import 'src/van_checkbox.dart';
+import 'src/van_slider.dart';
+import 'src/van_radio.dart';
+import 'src/van_switch.dart';
+import 'src/van_datepicker.dart';
+import 'src/van_steps.dart';
 
 void main() {
   runApp(MyApp());
