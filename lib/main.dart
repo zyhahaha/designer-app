@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 // basic
-import 'nav_bar.dart';
+// import 'nav_bar.dart';
+// router
+import 'router/index.dart';
 // widget
 import 'src/van_text.dart';
 import 'src/van_button.dart';
@@ -25,35 +27,38 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: MyHomePage(title: 'Flutter Demo A'),
+      // home: MyHomePage(title: 'Flutter Demo A'),
       debugShowCheckedModeBanner: false, // 隐藏Debug标记
+
+      initialRoute: "/",
+      routes: routersMap,
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key, required this.title}) : super(key: key);
+// class MyHomePage extends StatefulWidget {
+//   MyHomePage({Key? key, required this.title}) : super(key: key);
 
-  final String title;
+//   final String title;
 
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
+//   @override
+//   _MyHomePageState createState() => _MyHomePageState();
+// }
 
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[VanText(title: 'aaaaaa')],
-        ),
-      ),
-      bottomNavigationBar: VanNavigationBar(),
-    );
-  }
-}
+// class _MyHomePageState extends State<MyHomePage> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text(widget.title),
+//       ),
+//       body: Center(
+//         child: Column(
+//           mainAxisAlignment: MainAxisAlignment.center,
+//           children: <Widget>[VanText(title: 'aaaaaa')],
+//         ),
+//       ),
+//       bottomNavigationBar: VanNavigationBar(),
+//     );
+//   }
+// }
