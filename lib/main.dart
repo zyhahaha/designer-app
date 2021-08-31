@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: HomePageContainer(pageIndex: 0),
+      home: HomePageContainer(title: 'test aaa'),
       debugShowCheckedModeBanner: false, // 隐藏Debug标记
 
       // initialRoute: "/",

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 // basic
-import 'nav_bar.dart';
+// import 'nav_bar.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key, required this.title}) : super(key: key);
@@ -14,17 +14,11 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[Text('Home page')],
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[Text('Home page')],
-        ),
-      ),
-      bottomNavigationBar: VanNavigationBar(),
     );
   }
 }

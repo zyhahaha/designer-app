@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 class VanNavigationBar extends StatefulWidget {
+  final ValueChanged<int> onChangeIndex;
+  VanNavigationBar({Key? key, required this.onChangeIndex}) : super(key: key);
+
   @override
   _VanNavigationBar createState() => _VanNavigationBar();
 }
@@ -29,6 +32,7 @@ class _VanNavigationBar extends State<VanNavigationBar> {
     setState(() {
       _selectedIndex = index;
     });
+    widget.onChangeIndex(index);
   }
 
   @override
