@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false, // 隐藏Debug标记
 
       // initialRoute: "/",
-      routes: routersMap,
+      routes: routes,
     );
   }
 }
